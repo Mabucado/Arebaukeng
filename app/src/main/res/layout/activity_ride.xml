@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ride">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Arebaukeng"
+        android:textAlignment="center"
+        android:textColor="#FAFF1C"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/brygada_1918"
+        android:text="Ride"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Enter Location"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <RadioGroup
+        android:id="@+id/rgDrivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelection" />
+
+    <TextView
+        android:id="@+id/txtSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select an available driver"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPostal" />
+
+    <EditText
+        android:id="@+id/edtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Street"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/edtSurburb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Surburb"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtStreet"
+        app:layout_constraintStart_toStartOf="@+id/edtStreet"
+        app:layout_constraintTop_toBottomOf="@+id/edtStreet" />
+
+    <EditText
+        android:id="@+id/edtTown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Town"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtSurburb"
+        app:layout_constraintStart_toStartOf="@+id/edtSurburb"
+        app:layout_constraintTop_toBottomOf="@+id/edtSurburb" />
+
+    <EditText
+        android:id="@+id/edtPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Postal Code"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtTown"
+        app:layout_constraintStart_toStartOf="@+id/edtTown"
+        app:layout_constraintTop_toBottomOf="@+id/edtTown" />
+
+    <Button
+        android:id="@+id/btnRequest"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Request"
+        android:textColor="#AEAEAE"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequested"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgDrivers" />
+
+    <Button
+        android:id="@+id/btnRideHome"
+        android:layout_width="256dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Home"
+        android:textColor="#AEAEAE"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRequest" />
+
+    <Button
+        android:id="@+id/btnRequested"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Requeted Rides"
+        android:textColor="#AEAEAE"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRequest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRequest"
+        app:layout_constraintTop_toTopOf="@+id/btnRequest" />
+</androidx.constraintlayout.widget.ConstraintLayout>

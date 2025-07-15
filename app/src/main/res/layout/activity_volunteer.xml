@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Volunteer">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Arebaukeng"
+        android:textAlignment="center"
+        android:textColor="#FAFF1C"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brygada_1918"
+        android:text="Volunteer"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnVolunteer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Volunteer"
+        android:textColor="#AEAEAE"
+        app:layout_constraintBottom_toTopOf="@+id/btnVolHome"
+        app:layout_constraintEnd_toStartOf="@+id/btnVolList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolHome"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Home"
+        android:textColor="#AEAEAE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#FAFF1C"
+        android:text="Volunteer List"
+        android:textColor="#AEAEAE"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVolunteer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnVolunteer"
+        app:layout_constraintTop_toTopOf="@+id/btnVolunteer" />
+
+    <EditText
+        android:id="@+id/edtVolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/edtVolGen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVolName" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:foregroundTint="#932525"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtVolGen">
+
+        <RadioButton
+            android:id="@+id/rbCleaner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleaner" />
+
+        <RadioButton
+            android:id="@+id/rbDriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver" />
+
+        <RadioButton
+            android:id="@+id/rbCook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cook" />
+
+        <RadioButton
+            android:id="@+id/rbNurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nurse" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

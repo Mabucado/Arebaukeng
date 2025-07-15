@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chats">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="2dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Arrebaukeng"
+        android:textAlignment="center"
+        android:textColor="#FAFF1C"
+        android:textSize="60sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVie"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_above="@+id/messageInputLayout"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp" />
+
+    <LinearLayout
+            android:id="@+id/messageInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type a message"
+                android:inputType="text" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FAFF1C"
+            android:text="Send"
+            android:textColor="#AEAEAE" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/brygada_1918"
+        android:text="Chat"
+        android:textSize="48sp" />
+
+    <View
+        android:id="@+id/swipe_view"
+        android:layout_width="410dp"
+        android:layout_height="322dp"
+        android:layout_alignBottom="@+id/recyclerVie"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-21dp"
+        android:background="#FFFFFF"
+        android:visibility="invisible" />
+</RelativeLayout>
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268898331577",
+    "project_id": "arebaukeng",
+    "storage_bucket": "arebaukeng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268898331577:android:3ef6344257f2cddb4fe468",
+        "android_client_info": {
+          "package_name": "com.example.arebaukeng"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYz69WAA0oPfbiBrhOoBPcdpiyPpdtH1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
